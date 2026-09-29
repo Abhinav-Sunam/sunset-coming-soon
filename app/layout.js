@@ -23,8 +23,14 @@ export const metadata = {
     description:
       "Tickets for DASILING will be live soon. Join the community to be the first to know.",
     type: "website",
-    images: ["/background.png"],
+    images: ["/background.webp"],
   },
+};
+
+export const viewport = {
+  themeColor: "#0a0a0a",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }) {

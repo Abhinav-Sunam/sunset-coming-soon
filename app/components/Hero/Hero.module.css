@@ -60,8 +60,8 @@
   letter-spacing: var(--tracking-widest);
   text-transform: uppercase;
   color: var(--color-text-muted);
-  /* >>> MOVE COMING SOON CLOSER/FURTHER: Increase the negative margin to pull it higher up <<< */
-  margin-top: -14px;
+  margin-top: var(--space-md);
+  /* positive = pushes it down, away from the logo */
   margin-bottom: var(--space-xl);
   opacity: 0;
   animation: heroFadeUp 0.8s var(--ease-out) 0.3s forwards;

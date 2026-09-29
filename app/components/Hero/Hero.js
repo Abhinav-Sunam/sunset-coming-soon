@@ -8,12 +8,13 @@ export default function Hero() {
       {/* Background */}
       <div className={styles.hero__background}>
         <Image
-          src="/background.png"
+          src="/background.webp"
           alt="Sunset Sessions"
           fill
           priority
           className={styles.hero__backgroundImage}
           sizes="100vw"
+          quality={85}
         />
       </div>
 
@@ -23,11 +24,12 @@ export default function Hero() {
       {/* Content */}
       <div className={styles.hero__content}>
         <Image
-          src="/logo.png"
+          src="/logo.webp"
           alt="Sunset Sessions"
           width={180}
-          height={180}
+          height={102}
           className={styles.hero__logo}
+          sizes="(max-width: 640px) 96px, (max-width: 1024px) 130px, 150px"
           priority
         />
 
@@ -37,11 +39,12 @@ export default function Hero() {
           <span className={styles.hero__headlineLead}>Tickets for</span>
           <div className={styles.hero__logoWrapper}>
             <Image
-              src="/Dasailing.png"
+              src="/Dasailing.webp"
               alt="Dasailing"
               width={600}
               height={300}
               className={styles.hero__dasailingLogo}
+              sizes="(max-width: 640px) 320px, (max-width: 1024px) 440px, 480px"
               priority
             />
           </div>
